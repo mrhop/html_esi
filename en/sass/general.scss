@@ -1,0 +1,65 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.general-slider .bg-img-1 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.general-slider .bg-img-2 {
+  background-image: url(../images/home/2.jpg);
+}
+
+.general-slider .bg-img-3 {
+  background-image: url(../images/home/3.jpg);
+}
+
+.general-slider .bg-img-4 {
+  background-image: url(../images/home/0.jpg);
+}
+
+.general-slider .bg-img-5 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.general-slider .sl-slider .content-wrapper{
+  margin-left: 100px;
+  height: 100%;
+}
+
+
+.sl-slide1.sl-trans-elems .scrollbar-page{
+  @include animation(fadeInDown 1.5s both);
+}
+
+.sl-slide1.sl-trans-back-elems .scrollbar-page{
+  @include animation(fadeOutUp 1.5s both);
+}
+
+
+.sl-slide2.sl-trans-elems .scrollbar-page{
+  @include animation(fadeInRight 1.5s both);
+}
+
+.sl-slide2.sl-trans-back-elems .scrollbar-page{
+  @include animation(fadeOutLeft 1.5s both);
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .general-slider .sl-slider .content-wrapper{
+    margin-left: 0px;
+  }
+}

@@ -1,0 +1,97 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.building-slider .sl-slider .content-wrapper{
+  margin-left: 100px;
+  height: 100%;
+}
+
+.building-slider .sl-slider .content-wrapper > div{
+  width: 33%;
+  height: 95%;
+  margin-right: 1px;
+  float: left;
+  background-color: #000000;
+}
+
+.building-slider .sl-slider .content-wrapper > div div{
+  width: 100%;
+  height: 100%;
+  @include background-size(cover);
+  text-align: center;
+  vertical-align: middle;
+}
+
+.building-slider .sl-slider .content-wrapper > div div:hover{
+  @include opacity(0.7);
+}
+
+.building-slider .sl-slider .content-wrapper > div div a{
+  font-size: 36px;
+  color: white;
+  display:inline-block;
+  height: 100%;
+  width: 100%;
+  padding-top: 30%;
+  word-break: break-all;
+  word-wrap:break-word;
+}
+
+
+
+.building-slider .sl-slider .content-wrapper >  div:last-child{
+  width: 33.6%;
+  margin-right: 0px;
+}
+
+.building-slider .sl-slider .content-wrapper:first-child > div:first-child div{
+  background-image: url("../images/building/A.jpeg") ;
+}
+
+.building-slider .sl-slider .content-wrapper:first-child > div:nth-child(2) div{
+  background-image: url("../images/building/B.jpeg");
+}
+
+.building-slider .sl-slider .content-wrapper:first-child > div:last-child div{
+  background-image: url("../images/building/C.jpeg");
+}
+
+.building-slider .sl-slider .content-wrapper:nth-child(2) > div:first-child div{
+  background-image: url("../images/building/D.jpeg") ;
+}
+
+.building-slider .sl-slider .content-wrapper:nth-child(2) > div:nth-child(2) div{
+  background-image: url("../images/building/E.jpeg");
+}
+
+.building-slider .sl-slider .content-wrapper:nth-child(2) > div:last-child  div{
+  background-image: url("../images/building/F.jpeg");
+}
+
+.building-slider .nav-arrows-div{
+  display: block;
+}
+
+@media screen and (max-width: 660px) {
+  .building-slider .sl-slider .content-wrapper{
+    margin-left: 0px;
+    min-width: 660px;
+  }
+  .building-slider .sl-slider .content-wrapper > div{
+    min-width: 218px;
+    margin-top: 60px;
+    height: 85%;
+  }
+  }

@@ -1,0 +1,107 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class=" js csstransforms3d">
+<head lang="zh">
+    <script type="text/javascript" src="javascripts/pre.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">
+        clientSideInclude("include/head.html")
+    </script>
+    <link href="stylesheets/scrollbar/perfect-scrollbar.min.css" rel="stylesheet">
+    <script src="javascripts/jquery/scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/esi.js"></script>
+    <script type="text/javascript" src="javascripts/jquery/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+</head>
+<body id="page" data-doc-type="quality">
+<script type="text/javascript">
+    clientSideInclude("include/topMenu.html")
+</script>
+<script type="text/javascript">
+    clientSideInclude("include/bodyLeft.html")
+</script>
+<div class="body-right">
+    <script type="text/javascript">
+        clientSideInclude("include/footer.html")
+    </script>
+    <ul class="pages">
+        <li class="active"><a href="#">Architectural Solutions</a></li>
+        <li><a href="#">Life with High Tech</a></li>
+        <li><a href="#">Living Comfortable</a></li>
+    </ul>
+    <div class="quality-slider" style="z-index: -30;">
+        <div id="slider" class="sl-slider-wrapper">
+            <div class="sl-slider">
+                <div class="sl-slide sl-slide1 sl-trans-elems" data-orientation="fade" data-slice1-opacity="0"
+                     data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-1"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Architectural Solutions</h1>
+
+                                    <p>We use the high standard construction materials for the whole structure, so that
+                                        the building can be as firm as a castle, stand forever.</p>
+                                    <img src="images/quality/architectural.jpg"
+                                         style="width: 100%;float: left;" alt="Architectural Solutions"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-slide sl-slide2" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-2"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Life with High Tech</h1>
+
+                                    <p>We are very honored to provide you a comfortable and safe life that Germany and
+                                        even the whole Europe expects.</p>
+
+                                    <p>For achieving this goal, we only use the products from 27 German companies. For
+                                        example, the elevator from ThyssenKrupp, the lighting system from OSRAM, and the
+                                        world famous brand – SIEMENS.</p>
+
+                                    <p>Our superior German products ensure the house stays warm and that the heat is
+                                        well distributed.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-slide sl-slide3" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-3"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Living Comfortable</h1>
+                                    <p>Our German-style compound is beautifully designed with a number of different areas, water feature sand various levels.</p>
+                                    <p>There will be a spacious central area where residents can relax, exercise and socialize in comfort.</p>
+                                    <p style="clear: both;">The central area will have a children’s playground.</p>
+                                    <a id="fancybox-a" href="javascript:;"><img src="images/quality/living.jpg" width="100%" alt="Living Comfortable"/></a>
+                                    <script type="application/javascript">
+                                        $("#fancybox-a").click(function() {
+                                            $.fancybox.open('images/quality/living-big.jpg');
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /sl-slider -->
+            <div class="content-wrapper nav-arrows-div">
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

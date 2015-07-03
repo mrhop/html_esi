@@ -1,0 +1,66 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class=" js csstransforms3d">
+<head lang="zh">
+    <script type="text/javascript" src="javascripts/pre.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">
+        clientSideInclude("include/head.html")
+    </script>
+    <script type="text/javascript" src="javascripts/jquery/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <script type="text/javascript" src="javascripts/esi.js"></script>
+</head>
+<body id="page" data-doc-type="house">
+<script type="text/javascript">
+    clientSideInclude("include/topMenu.html")
+</script>
+<script type="text/javascript">
+    clientSideInclude("include/bodyLeftClose.html")
+</script>
+<div class="body-right">
+    <script type="text/javascript">
+        clientSideInclude("include/footer.html")
+    </script>
+    <div class="draft-left" style=""><a id="fancybox-a" href="javascript:;"><img src="images/house/type1/draft.png" width="100%"/></a></div>
+   <script type="application/javascript">
+       $("#fancybox-a").click(function() {
+           $.fancybox.open('images/house/type1/detail.jpg');
+       });
+   </script>
+    <ul class="pages">
+        <li class="active"><a href="#">Rom#1</a></li>
+        <li><a href="#">Rom#2</a></li>
+        <li><a href="#">Rom#3</a></li>
+    </ul>
+    <div id="house-slider-1" class="house-slider house-slider-1" style="z-index: -30;">
+        <div id="slider" class="sl-slider-wrapper">
+            <div class="sl-slider">
+                <div class="sl-slide sl-slide1 sl-trans-elems" data-orientation="fade" data-slice1-opacity="0"
+                     data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-1"></div>
+                    </div>
+                </div>
+
+                <div class="sl-slide sl-slide2" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-2"></div>
+                        <div class="content-wrapper">
+                            content
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-slide sl-slide3" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-3"></div>
+                        <div class="content-wrapper">
+                            content
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

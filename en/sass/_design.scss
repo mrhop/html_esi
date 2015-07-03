@@ -1,0 +1,55 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.design-slider .bg-img-1 {
+  background-image: url(../images/home/1.jpg);
+}
+
+
+.design-slider .sl-slider .content-wrapper{
+  margin-left: 100px;
+  height: 100%;
+}
+
+.design-slider .scrollbar-page .content div{
+   width: 100%;
+   overflow: hidden;
+   padding-top: 10px;
+   padding-bottom: 10px;
+ }
+
+.design-slider .scrollbar-page .content div span{
+  width: 49%;
+  overflow: hidden;
+  text-align: center
+}
+
+.design-slider .scrollbar-page .content div span.left{
+  float: left;
+}
+
+.design-slider .scrollbar-page .content div span.right{
+  float: right;
+}
+
+.design-slider .scrollbar-page .content div span img{
+  width: 100%;
+}
+
+@media screen and (max-width: 660px) {
+  .design-slider .sl-slider .content-wrapper{
+    margin-left: 0px;
+  }
+}

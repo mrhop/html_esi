@@ -1,0 +1,106 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class=" js csstransforms3d">
+<head lang="zh">
+    <script type="text/javascript" src="javascripts/pre.js"></script>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <script type="text/javascript">
+        clientSideInclude("include/head.html")
+    </script>
+    <link href="stylesheets/scrollbar/perfect-scrollbar.min.css" rel="stylesheet">
+    <script src="javascripts/jquery/scrollbar/perfect-scrollbar.jquery.min.js"></script>
+    <script type="text/javascript" src="javascripts/jquery/fancybox/jquery.fancybox.js?v=2.1.5"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/fancybox/jquery.fancybox.css?v=2.1.5" media="screen" />
+    <script type="text/javascript" src="javascripts/esi.js"></script>
+</head>
+<body id="page" data-doc-type="location">
+<script type="text/javascript">
+    clientSideInclude("include/topMenu.html")
+</script>
+<script type="text/javascript">
+    clientSideInclude("include/bodyLeft.html")
+</script>
+<div class="body-right">
+    <script type="text/javascript">
+        clientSideInclude("include/footer.html")
+    </script>
+    <ul class="pages">
+        <li class="active"><a href="#">Transportation</a></li>
+        <li><a href="#">Education and Medic</a></li>
+        <li><a href="#">Shopping and Entertainment</a></li>
+    </ul>
+    <div class="location-slider" style="z-index: -30;">
+        <div id="slider" class="sl-slider-wrapper">
+            <div class="sl-slider">
+                <div class="sl-slide sl-slide1 sl-trans-elems" data-orientation="fade" data-slice1-opacity="0"
+                     data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-1"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Transportation</h1>
+
+                                    <p>Our project is located in Hunan New District, you can reach to the center of the city directly by taking the buses or subway. There are bus stops in front of the gate, and it takes 4 minutes only to arrive the subway station.</p>
+
+                                    <img src="images/location/transportation.jpg"
+                                         style="width: 100%;margin-bottom:60px;float: left;" alt="Transportation"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-slide sl-slide2" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-2"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Education and Medic</h1>
+                                    <p>There are many schools and hospitals surrounding us</p>
+                                    <a id="fancybox-a" href="javascript:;"><img src="images/location/education.jpg"
+                                         style="width: 100%;margin-bottom:60px;float: left;" alt="Education and Medic"/></a>
+                                    <script type="application/javascript">
+                                        $("#fancybox-a").click(function() {
+                                            $.fancybox.open('images/location/education-big.jpg');
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="sl-slide sl-slide3" data-orientation="fade" data-slice1-opacity="0" data-slice2-opacity="0">
+                    <div class="sl-slide-inner">
+                        <div class="bg-img bg-img-3"></div>
+                        <div class="content-wrapper">
+                            <div class="scrollbar-page">
+                                <div class="content" style="font-size: 18px;">
+                                    <h1>Shopping and Entertainment</h1>
+
+                                    <p>All the entertainment areas and shopping centers can be reached within 8 minutes only. With the convenient transport, our owners could have more time to enjoy the leisure activities.</p>
+
+                                    <a id="fancybox-b" href="javascript:;"><img src="images/location/shopping.jpg"
+                                                                                style="width: 100%;margin-bottom:60px;float: left;" alt="Shopping and Entertainment"/></a>
+                                    <script type="application/javascript">
+                                        $("#fancybox-b").click(function() {
+                                            $.fancybox.open('images/location/shopping-big.jpg');
+                                        });
+                                    </script>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /sl-slider -->
+            <div class="content-wrapper nav-arrows-div">
+                <nav id="nav-arrows" class="nav-arrows">
+                    <span class="nav-arrow-prev">Previous</span>
+                    <span class="nav-arrow-next">Next</span>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,89 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.developer-slider .bg-img-1 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.developer-slider .bg-img-2 {
+  background-image: url(../images/home/2.jpg);
+}
+
+.developer-slider .bg-img-3 {
+  background-image: url(../images/home/3.jpg);
+}
+
+.developer-slider .bg-img-4 {
+  background-image: url(../images/home/0.jpg);
+}
+
+.developer-slider .bg-img-5 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.developer-slider .sl-slider .content-wrapper {
+  margin-left: 100px;
+  height: 100%;
+}
+
+.developer-slider .sl-slide1.sl-trans-elems .scrollbar-page {
+  @include animation(fadeInDown 1.5s both);
+}
+
+.developer-slider .sl-slide1.sl-trans-back-elems .scrollbar-page {
+  @include animation(fadeOutUp 1.5s both);
+}
+
+.developer-slider .sl-slider .content-wrapper .scrollbar-page h2 {
+  margin-bottom: 0px;
+  font-size: 20px;
+  font-weight: 300;
+}
+
+.developer-slider .sl-slider .content-wrapper .scrollbar-page hr {
+  margin-top: 0px;
+}
+
+.developer-slider .sl-slider .content-wrapper .scrollbar-page h3 {
+  margin-bottom: 0px;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.developer-slider .sl-slider .content-wrapper .scrollbar-page p {
+  clear: both;
+  margin-top: 10px;
+  overflow: hidden;
+}
+
+.developer-slider .sl-slide3 .content-wrapper .scrollbar-page img {
+  width: 300px;
+  height: 170px;
+  margin-right: 10px;
+  float: left;
+}
+.developer-slider .sl-slide3 .content-wrapper .scrollbar-page .content p:last-child {
+  margin-bottom:60px;
+}
+
+
+@media screen and (max-width: 660px) {
+  .developer-slider .sl-slider .content-wrapper {
+    margin-left: 0px;
+  }
+  .developer-slider .sl-slide3 .content-wrapper .scrollbar-page .content p:last-child {
+    margin-bottom:120px;
+  }
+}

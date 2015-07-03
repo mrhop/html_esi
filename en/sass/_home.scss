@@ -1,0 +1,159 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.home-slider .bg-img-1 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.home-slider .bg-img-2 {
+  background-image: url(../images/home/2.jpg);
+}
+
+.home-slider .bg-img-3 {
+  background-image: url(../images/home/3.jpg);
+}
+
+.home-slider .bg-img-4 {
+  background-image: url(../images/home/0.jpg);
+}
+
+.home-slider .bg-img-5 {
+  background-image: url(../images/home/1.jpg);
+}
+
+//content set
+
+.home-slider .sl-slide1 .home-logo {
+  margin-top: 55px;
+  @include sprite-properties($home-logo-height, $home-logo-width, $home-logo-sprite-left, $home-logo-sprite-top);
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.home-slider .sl-slide1 .home-text {
+  width: 270px;
+  margin: 30px auto 40px;
+  text-transform: uppercase;
+}
+
+.home-slider .sl-slide1 .line {
+  background-color: #fff;
+  width: 100%;
+  height: 1px;
+}
+
+.home-slider .sl-slide1 .home-items {
+  padding-bottom: 27px;
+}
+
+.home-slider .sl-slide1 .home-item {
+  display: inline-block;
+  background-color: rgba(255, 255, 255, 0.8);
+  width: 189px;
+  height: 51px;
+  line-height: 51px;
+  font-size: 18px;
+  color: #4d2d0d;
+  text-transform: uppercase;
+}
+
+.home-slider .sl-slide2 .content-wrapper{
+  height: 100%;
+}
+//effect set
+.home-slider .sl-slide1.sl-trans-elems .home-logo {
+  @include animation(fadeInDown 2s both);
+}
+
+.home-slider .sl-slide1.sl-trans-back-elems .home-logo {
+  @include animation(fadeOutUp 1s both);
+}
+
+.home-slider .sl-slide1.sl-trans-elems .lineLeft {
+  @include animation(bounceInLeft 2s both);
+}
+
+.home-slider .sl-slide1.sl-trans-back-elems .lineLeft {
+  @include animation(bounceOutRight 1s both);
+}
+
+.home-slider .sl-slide1.sl-trans-elems .lineRight {
+  @include animation(bounceInRight 2s both);
+}
+
+.home-slider .sl-slide1.sl-trans-back-elems .lineRight {
+  @include animation(bounceOutLeft 1s both);
+}
+
+.home-slider .sl-slide1.sl-trans-elems .home-text h1{
+  @include animation(zoomIn 2s both);
+}
+
+.home-slider .sl-slide1.sl-trans-back-elems .home-text h1 {
+  @include animation(zoomOut 1s both);
+}
+
+.home-slider .sl-slide1.sl-trans-elems .home-item {
+  @include backface-visibility(visible !important);
+  @include animation(flipInX 2s);
+}
+
+.home-slider .sl-slide1.sl-trans-back-elems .home-item{
+  @include backface-visibility(visible !important);
+  @include animation(flipOutX 1s);
+}
+
+.home-slider .sl-slide2.sl-trans-elems p{
+  @include animation(fadeInRight 1.5s both);
+}
+
+.home-slider .sl-slide2.sl-trans-back-elems p{
+  @include animation(fadeOutLeft 1.5s both);
+}
+
+.home-slider .sl-slide3.sl-trans-elems p{
+  @include animation(fadeInDown 1.5s both);
+}
+
+.home-slider .sl-slide3.sl-trans-back-elems p{
+  @include animation(fadeOutUp 1.5s both);
+}
+
+
+@media screen and (max-width: 660px) {
+  .home-slider .sl-slide1 .home-items{
+    padding-left:auto;
+    padding-right:auto;
+    padding-bottom: 0px;
+  }
+  .home-slider .sl-slide1 .home-item{
+    display: block;
+    margin-bottom: 5px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 189px;
+    height: 31px;
+    line-height: 31px;
+    font-size: 15px;
+  }
+  .home-slider .sl-slide1 .home-logo{
+    margin-bottom: 10px;
+  }
+  .home-slider .sl-slide1 .home-text{
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+
+}

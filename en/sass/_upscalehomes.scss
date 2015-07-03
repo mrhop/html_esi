@@ -1,0 +1,47 @@
+@import "bootstrap/variables";
+@import "bootstrap-variables";
+@import "bootstrap/mixins";
+@import "compass/css3";
+
+@mixin sprite-properties($element-height,$element-width,$element-bg-left,$element-bg-top) {
+  background: $sprite-url $element-bg-left $element-bg-top;
+  @if ($element-height !=null) {
+    height: $element-height;
+  }
+  @if ($element-width !=null) {
+    width: $element-width;
+  }
+}
+
+.upscalehomes-slider .bg-img-1 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.upscalehomes-slider .bg-img-2 {
+  background-image: url(../images/home/2.jpg);
+}
+
+.upscalehomes-slider .bg-img-3 {
+  background-image: url(../images/home/3.jpg);
+}
+
+.upscalehomes-slider .bg-img-4 {
+  background-image: url(../images/home/0.jpg);
+}
+
+.upscalehomes-slider .bg-img-5 {
+  background-image: url(../images/home/1.jpg);
+}
+
+.upscalehomes-slider .sl-slider .content-wrapper{
+  margin-left: 100px;
+  height: 100%;
+}
+
+
+
+@media screen and (max-width: 660px) {
+  .upscalehomes-slider .sl-slider .content-wrapper{
+    margin-left: 0px;
+  }
+}
